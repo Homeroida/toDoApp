@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="todo-container">
+      <div class="todo">
+        <h2>TODO</h2>
+        <img class="img" src="./images/icon-moon.svg" />
+      </div>
+
+      <div class="create-todo dark">
+        <div class="checkbox-item">
+          <input class="checkbox1" type="checkbox" />
+
+          <div class="input-div"></div>
+        </div>
+        <input
+          class="input-text dark"
+          type="text"
+          id="task-title"
+          placeholder="Create a new todo..."
+        />
+      </div>
+      <div class="todo-list dark">
+        <ul id="tasksList">
+          <li>
+            <div class="flex-cross">
+              <div class="checkbox-item">
+                <input class="checkbox1" type="checkbox" />
+
+                <div class="input-div"></div>
+              </div>
+              <h3 class="main-text">Jog around the park 3x</h3>
+            </div>
+            <img src="./images/icon-cross.svg" />
+          </li>
+        </ul>
+        <div class="ul-footer dark">
+          <p class="left" id="taskLength"></p>
+          <div id="filterList" class="active-text">
+            <h4 data-filtered="all" class="all">All</h4>
+            <h4 data-filtered="active" class="active">Active</h4>
+            <h4 data-filtered="finish" class="finish">Completed</h4>
+          </div>
+          <div class="clear">
+            <p data-filtered="clear" class="left clearComleted">
+              Clear Completed
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-footer dark">
+        <div class="mobile-flex">
+          <h4 data-filtered="all" class="all">All</h4>
+          <h4 data-filtered="active" class="active">Active</h4>
+          <h4 data-filtered="finish" class="finish">Completed</h4>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/crud.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
